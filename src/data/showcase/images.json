@@ -1,0 +1,10 @@
+[
+    {
+      "title": "first bg",
+      "image": "src/data/showcase/images/citybg.jpg"
+    },
+    {
+      "title": "second bg",
+      "image": "src/data/showcase/images/city2bg.jpg"
+    }
+  ]
