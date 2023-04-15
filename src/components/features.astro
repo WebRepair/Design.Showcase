@@ -1,31 +1,41 @@
 ---
 import cityBg from "/src/data/showcase/images/citybg.jpg";
 import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
+
+import product1 from "/src/data/showcase/images/bedroom.jpg";  
+
+import product2 from "/src/data/showcase/images/kitchen.jpg";
+
+import product3 from "/src/data/showcase/images/flat.jpg";
 ---
 
 
 
-<div class=" mt-10 ml-40 text-3xl underline font-extrabold"> WR </div> 
+<div class=" "> 
  
-	<nav class=" flex gap-10 justify-end mr-64 text text-xl"> 
-	
-		<a href="https://www.webrepair.info" class=" hover:text-purple-500">About Us</a>
+	<div class="grid grid-cols-12 gap-10 mr-16 mt-10 text text-2xl"> 
 
-		<a href="https://www.webrepair.info" class=" hover:text-purple-500">Gallery</a>
-
-		<a href="https://www.webrepair.info" class=" hover:text-purple-500">Contact</a>
-
-		<a href="https://www.webrepair.info" class=" hover:text-purple-500">Pricing</a>
-
-		<a href="https://www.webrepair.info" class=" hover:text-purple-500">Offers</a>
+	  <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-black font-mono font-extrabold"> WR </a> 
 		
-	</nav>
+    <a class=" col-span-5"></a>
 
+    <a href="https://www.webrepair.info" class=" hover:text-purple-500 text-xl mt-5 col-span-1 flex justify-start">About Us</a>
+
+		<a href="https://www.webrepair.info" class=" hover:text-purple-500 text-xl mt-5 col-span-1 flex justify-start">Gallery</a>
+
+		<a href="https://www.webrepair.info" class=" hover:text-purple-500 text-xl mt-5 col-span-1 flex justify-start">Contact</a>
+
+		<a href="https://www.webrepair.info" class=" hover:text-purple-500 text-xl  mt-5 col-span-1 flex justify-start">Pricing</a>
+
+		<a href="https://www.webrepair.info" class=" hover:text-purple-500 text-xl mt-5 col-span-1 flex justify-start">Offers</a>
+		
+  </div>
+</div>
 	<div class=" grid grid-cols-12">
 
 		<div class="  col-span-6">
 			
-			<div class=" mt-28 font-serif">
+			<div class=" mt-20 font-serif">
 				<h1 class="   flex justify-center">We are <a class="text-gradient ml-2"> WebRepair</a>  </h1>
 				<h1 class="   mt-10 flex justify-center text-3xl">	This site could be yours </h1> 
 				
@@ -42,32 +52,61 @@ import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
 		</div>
 
 		<div class="  col-span-6">
-				<div class=" mr-10 mt-20"> <img src={cityBg} alt=""> </div>
+				<div class=" mr-10 mt-24"> <img src={cityBg} alt=""> </div>
 		</div>
 
 	</div>
 
-	<div class=" grid grid-cols-12 mt-28 mb-28">
+
+  <div class=" mt-56 flex justify-center text-2xl mb-5"> Product Section, can be changed to anything </div>
+
+  <div class=" grid grid-cols-12">
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product1} alt=""> </div>
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product3} alt=""> </div>
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product2} alt=""> </div>
+
+  </div>
+
+  <div class="grid grid-cols-12"> 
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+  </div>
+  
+
+
+  
+
+	<div class=" grid grid-cols-12 mt-40 mb-28">
 
 
 <div class="  col-span-6">
-				<div class=" mr-10 mt-20"> <img src={cityBg2} alt=""> </div>
+				<div class=" ml-10 mt-20"> <img src={cityBg2} alt=""> </div>
 		</div>
 
 
 		<div class="  col-span-6">
 			
-			<div class=" mt-28 font-serif">
-				<h1 class="   flex justify-center">We create <a class="text-gradient2  ml-2"> Websites</a>  </h1>
+			<div class=" mt-28">
+				<!--- <h1 class="   flex justify-center">We create <a class="text-gradient2  ml-2"> Websites</a>  </h1> --->
 				
 				
-				<div class=" mb-28 text-xl ml-36 mr-28 mt-10 leading-loose text-gray-500"> The importance of website speed is twofold: it affects both user experience and 
-					search engine rankings. From a user experience standpoint, a fast-loading website creates 
-					a positive first impression and improves engagement. Users are more likely to stick around 
+				<div class=" mb-10 text-left text-4xl font-bold font-sans ml-40 mr-40 leading-loose"> For users, 
+          a fast-loading website creates a positive first impression and improves engagement.
+          </div>
+          <div class=" mb-28 text-xl ml-36 mr-28 font-sans mt-5 leading-loose text-gray-500">
+          Users are more likely to stick around 
 					and explore a website if pages load quickly and smoothly. On the other hand, slow-loading 
 					websites can frustrate users and make them less likely to return in the future.
- 
-				</div>
+ </div>
+				
 
 				
 				
@@ -78,6 +117,18 @@ import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
 
 	</div>
 
+
+        <div class=" grid grid-cols-12 bg-black"> 
+              
+              <div class=" col-span-12 p-20"> <div class=" text-2xl text-white opacity-80 flex justify-center"> This website serves as a design showcase only </div> </div>
+
+        </div>
+
+
+
+
+
+
   <style is:global>
     main {
       margin: auto;
@@ -85,7 +136,7 @@ import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
       max-width: 60ch;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 4.2rem;
       font-weight: 800;
       margin: 0;
     }
@@ -135,7 +186,7 @@ import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		background-color: #fffdfd;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
