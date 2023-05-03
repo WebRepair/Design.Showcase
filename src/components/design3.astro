@@ -1,0 +1,202 @@
+---
+import cityBg from "/src/data/showcase/images/citybg.jpg";
+import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
+
+import product1 from "/src/data/showcase/images/bedroom.jpg";  
+
+import product2 from "/src/data/showcase/images/kitchen.jpg";
+
+import product3 from "/src/data/showcase/images/flat.jpg";
+
+
+
+
+---
+
+<div class=" "> 
+ 
+    <div class="grid grid-cols-12 gap-10 mr-16 mt-10 text text-2xl"> 
+  
+      <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a> 
+      
+      <a href="/" class=" hover:bg-slate-400 border border-gray-500 ml-40 mr-40 text-white opacity-80 col-span-5 flex justify-center mt-5 ">NEXT DESIGN</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start">About Us</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start">Gallery</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start">Contact</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl  mt-5 col-span-1 flex justify-start">Pricing</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start">Offers</a>
+      
+    </div>
+  </div>
+
+
+	<div class=" grid grid-cols-12">
+
+		<div class="  col-span-6">
+			
+			<div class=" mt-20 font-serif">
+				<h1 class=" text-white  flex justify-center"> We are <a class=" text-black ml-2"> WebRepair</a>  </h1>
+				<h1 class="  text-white mt-10 flex justify-center text-3xl">	This site could be yours </h1> 
+
+        
+				
+				<div class=" text-xl ml-36 mr-28 mt-10 leading-loose text-gray-500"> In today's digital age, the speed of a website loading has become increasingly important. 
+					With so many websites vying for attention, users have little patience for slow loading times. 
+					In fact, studies have shown that even a delay of just a few seconds can cause users to abandon 
+					a website altogether.
+ 
+				</div>
+
+				
+				
+			</div>
+		</div>
+
+		<div class="  col-span-6">
+				<div class=" mr-10 mt-24"> <img src={cityBg} alt=""> </div>
+		</div>
+
+	</div>
+
+
+  <div class=" mt-56 flex justify-center text-2xl mb-5"> Product Section, can be changed to anything </div>
+
+  <div class=" grid grid-cols-12">
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product1} alt=""> </div>
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product3} alt=""> </div>
+
+    <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product2} alt=""> </div>
+
+  </div>
+
+  <div class="grid grid-cols-12"> 
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+      <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+
+  </div>
+  
+
+
+  
+
+	<div class=" grid grid-cols-12 mt-40 mb-28">
+
+
+<div class="  col-span-6">
+				<div class=" ml-10 mt-20"> <img src={cityBg2} alt=""> </div>
+		</div>
+
+
+		<div class="  col-span-6">
+			
+			<div class=" mt-28">
+				<!--- <h1 class="   flex justify-center">We create <a class="text-gradient2  ml-2"> Websites</a>  </h1> --->
+				
+				
+				<div class=" mb-10 text-left text-4xl font-bold font-sans ml-40 mr-40 leading-loose"> For users, 
+          a fast-loading website creates a positive first impression and improves engagement.
+          </div>
+          <div class=" mb-28 text-xl ml-36 mr-28 font-sans mt-5 leading-loose text-gray-500">
+          Users are more likely to stick around 
+					and explore a website if pages load quickly and smoothly. On the other hand, slow-loading 
+					websites can frustrate users and make them less likely to return in the future.
+ </div>
+				
+
+				
+				
+			</div>
+		</div>
+
+		
+
+	</div>
+
+
+        <div class=" grid grid-cols-12 bg-black"> 
+              
+              <div class=" col-span-12 p-20"> <div class=" text-2xl text-white opacity-80 flex justify-center"> This website serves as a design showcase only </div> </div>
+
+        </div>
+
+
+
+
+
+
+  <style>
+    main {
+      margin: auto;
+      padding: 1.5rem;
+      max-width: 60ch;
+    }
+    h1 {
+      font-size: 4.2rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+
+    .text-gradient2 {
+      background-image: var(--accent-gradient2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .instructions {
+      line-height: 1.6;
+      margin: 1rem 0;
+      border: 1px solid rgba(var(--accent), 25%);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.4rem;
+    }
+    .instructions code {
+      font-size: 0.875em;
+      font-weight: bold;
+      background: rgba(var(--accent), 12%);
+      color: rgb(var(--accent));
+      border-radius: 4px;
+      padding: 0.3em 0.45em;
+    }
+    .instructions strong {
+      color: rgb(var(--accent));
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 1rem;
+      padding: 0;
+    }
+    :root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent-gradient2: linear-gradient(45deg, rgb(var(--accent)), #1503b4 40%, rgb(255, 255, 255) 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #af0606;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+  </style>
