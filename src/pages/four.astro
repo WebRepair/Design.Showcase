@@ -1,0 +1,137 @@
+---
+import cityBg from "/src/data/showcase/images/citybg.jpg";
+
+import Title from "/src/data/showcase/images/Title.jpg";
+
+
+import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
+
+import product1 from "/src/data/showcase/images/bedroom.jpg";  
+
+import product2 from "/src/data/showcase/images/kitchen.jpg";
+
+import product3 from "/src/data/showcase/images/flat.jpg";
+
+---
+
+<div class=" "> 
+ 
+    <div class="grid grid-cols-12 gap-10 mr-16 mt-10 text text-2xl"> 
+  
+      <a class=" col-span-2 flex justify-center ml-36 text-5xl border border-white text-white font-mono"> WR </a> 
+      
+      <a href="/five" class=" hover:bg-slate-400 border border-gray-500 ml-40 mr-40 text-white opacity-80 col-span-5 flex justify-center mt-5 ">NEXT DESIGN</a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start"></a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start"></a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start"></a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl  mt-5 col-span-1 flex justify-start"></a>
+  
+      <a href="" class=" hover:text-purple-500 text-white text-xl mt-5 col-span-1 flex justify-start"></a>
+      
+    </div>
+  </div>
+
+  <div class=" grid grid-cols-12">
+
+    <div class=" col-span-6">
+        
+        <div class=" mt-48 font-sans">
+            <h1 class=" text-white flex justify-center">We are <a class="text-white ml-2"> WebRepair</a>  </h1>
+            <h1 class=" text-white  mt-6 flex justify-center text-5xl">	We repair websites </h1> 
+            <h1 class=" text-white  mt-6 flex justify-center text-5xl">	This site could be yours </h1> 
+            
+            <div class=" text-xl flex justify-center mt-20 text-white"> <button class="bg-gray-800 rounded-sm py-1 px-10"> Buy </button>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+
+    <div class=" col-span-1"> </div>
+
+    <div class=" col-span-4">
+            <div class=" flex justify-center"> <img src={Title} alt=""> </div>
+    </div>
+
+    <div class=" col-span-1"> </div>
+
+</div>
+    
+            
+    
+      
+
+
+
+
+
+  <style>
+    main {
+      margin: auto;
+      padding: 1.5rem;
+      max-width: 60ch;
+    }
+    h1 {
+      font-size: 4.2rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .text-gradient2 {
+      background-image: var(--accent-gradient2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .instructions {
+      line-height: 1.6;
+      margin: 1rem 0;
+      border: 1px solid rgba(var(--accent), 25%);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.4rem;
+    }
+    .instructions code {
+      font-size: 0.875em;
+      font-weight: bold;
+      background: rgba(var(--accent), 12%);
+      color: rgb(var(--accent));
+      border-radius: 4px;
+      padding: 0.3em 0.45em;
+    }
+    .instructions strong {
+      color: rgb(var(--accent));
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 1rem;
+      padding: 0;
+    }
+    :root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent-gradient2: linear-gradient(45deg, rgb(var(--accent)), #1503b4 40%, rgb(255, 255, 255) 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #e45e2d;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+  </style>
