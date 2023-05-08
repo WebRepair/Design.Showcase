@@ -1,43 +1,39 @@
 ---
-import cityBg from "/src/data/showcase/images/citybg.jpg";
-import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
 
-import product1 from "/src/data/showcase/images/bedroom.jpg";  
-
-import product2 from "/src/data/showcase/images/kitchen.jpg";
-
-import product3 from "/src/data/showcase/images/flat.jpg";
-
-
+import firstbg from "src/data/showcase/images/firstPage.jpg"
 
 
 ---
 
 
 <html> 
-
-	<div class=" grid grid-cols-12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Oswald:wght@300;400&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  
+  <div class=" grid grid-cols-12">
 
 		<div class="  col-span-6">
 			
-			<div class=" mt-28 font-serif">
-				<h1 class="  text-white flex justify-center">We are <a class="text-gradient ml-2"> WebRepair</a>  </h1>
-				<h1 class=" text-white  mt-10 flex justify-center text-3xl">	This site could be yours </h1> 
+			<div class=" ml-20 mt-28 font-sans">
+				<div class=" font text-black text-4xl flex justify-start"> Real Estate CO. <a class="text-gradient ml-2"> </a>  </div>
+				<h1 class=" font mt-14 flex justify-start text-5xl">	
+          PERSONALIZED DESIGN </h1> 
 				
-				<div class=" text-xl ml-36 mr-28 mt-10 leading-loose text-gray-500"> In today's digital age, the speed of a website loading has become increasingly important. 
-					With so many websites vying for attention, users have little patience for slow loading times. 
-					In fact, studies have shown that even a delay of just a few seconds can cause users to abandon 
-					a website altogether.
- 
-				</div>
+				<h1 class=" font mt-10 flex justify-start text-5xl "> 
+            FAST LOADING
+        </h1>
 
+        <h1 class=" font mt-10 flex justify-start text-5xl "> 
+          THIS SITE COULD BE YOURS
+        </h1>
 				
 				
 			</div>
 		</div>
 
-		<div class="  col-span-6">
-				<div class=" mr-10 mt-24"> <img src={cityBg} alt=""> </div>
+		<div class=" pb-20 col-span-6">
+				<div class=" mr-10 mt-24"> <img src={firstbg} alt=""> </div>
 		</div>
 
 	</div>
@@ -115,6 +111,10 @@ import product3 from "/src/data/showcase/images/flat.jpg";
 
 
   <style>
+
+    .font {
+     font-family: 'Sawarabi Gothic', sans-serif;
+    }
     main {
       margin: auto;
       padding: 1.5rem;
@@ -171,7 +171,7 @@ import product3 from "/src/data/showcase/images/flat.jpg";
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #000000;
+		background-color: #dfc4a9;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
