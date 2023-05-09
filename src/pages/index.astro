@@ -1,9 +1,6 @@
 ---
-import Features from "~/components/features.astro";
 
-import Design2 from "~/components/design2.astro";
-
-import Design3 from "~/components/design3.astro";
+import firstPage from "src/data/showcase/images/firstPage.jpg"
 
 
 
@@ -44,7 +41,108 @@ import Design3 from "~/components/design3.astro";
     </div>
       
     
-      <Features />
+    <html> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Oswald:wght@300;400&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+      
+      <div class=" grid grid-cols-12">
+    
+        <div class="  col-span-6">
+          
+          <div class=" ml-24 mt-36 font-sans">
+            <div class=" font text-black text-4xl flex justify-start"> Real Estate CO. <a class="text-gradient ml-2"> </a>  </div>
+            <h1 class=" font mt-14 flex justify-start text-6xl">	
+              EXPERTISE. </h1> 
+            
+            <h1 class=" font mt-10 flex justify-start text-6xl "> 
+                COMMITMENT.
+            </h1>
+    
+            <h1 class=" font mt-10 flex justify-start text-6xl "> 
+              VALUE.
+            </h1>
+            
+            
+          </div>
+        </div>
+    
+        <div class=" pb-28 col-span-6">
+            <div class=" mr-10 mt-20"> <img src={firstPage} alt="photo"> </div>
+        </div>
+    
+      </div>
+    
+    <!---  
+      <div class=" mt-56 flex justify-center text-2xl mb-5"> Product Section, can be changed to anything </div>
+    
+      <div class=" grid grid-cols-12">
+    
+        <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product1} alt=""> </div>
+    
+        <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product3} alt=""> </div>
+    
+        <div class=" col-span-4 border-2 rounded-xl border-black m-5 hover:rounded-none p-4"> <img src={product2} alt=""> </div>
+    
+      </div>
+    
+      <div class="grid grid-cols-12"> 
+    
+          <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+    
+          <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+    
+          <div class=" flex justify-center col-span-4 mt-10 text-2xl opacity-90"> product description </div>
+    
+      </div>
+      
+    
+    
+      
+    
+      <div class=" grid grid-cols-12 mt-40 mb-28">
+    
+    
+    <div class="  col-span-6">
+            <div class=" ml-10 mt-20"> <img src={cityBg2} alt=""> </div>
+        </div>
+    
+    
+        <div class="  col-span-6">
+          
+          <div class=" mt-28">
+            
+            
+            
+            <div class=" mb-10 text-left text-4xl font-bold font-sans ml-40 mr-40 leading-loose"> For users, 
+              a fast-loading website creates a positive first impression and improves engagement.
+              </div>
+              <div class=" mb-28 text-xl ml-36 mr-28 font-sans mt-5 leading-loose text-gray-500">
+              Users are more likely to stick around 
+              and explore a website if pages load quickly and smoothly. On the other hand, slow-loading 
+              websites can frustrate users and make them less likely to return in the future.
+     </div>
+            
+    
+            
+            
+          </div>
+        </div>
+    
+        
+    
+      </div>
+    
+    
+            <div class=" grid grid-cols-12 bg-black"> 
+                  
+                  <div class=" col-span-12 p-20"> <div class=" text-2xl text-white opacity-80 flex justify-center"> This website serves as a design showcase only </div> </div>
+    
+            </div>
+    --->
+    
+    
+    </html>
     
       
     
@@ -56,6 +154,9 @@ import Design3 from "~/components/design3.astro";
 
 
 <style>
+  .font {
+     font-family: 'Sawarabi Gothic', sans-serif;
+    }
   main {
     margin: auto;
     padding: 1.5rem;
