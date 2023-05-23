@@ -1,27 +1,33 @@
 ---
-import cityBg from "/src/data/showcase/images/citybg.jpg";
-import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
 
-import product1 from "/src/data/showcase/images/bedroom.jpg";  
-
-import product2 from "/src/data/showcase/images/kitchen.jpg";
-
-import product3 from "/src/data/showcase/images/flat.jpg";
-
-
-
-
+  
+  const ColoredHeadline = "INSIDE TEMPLATE"
+  
+  const Headline = "So what's inside? ..."
+  
+  const items = [ 
+  
+    {title: "Speed",
+    description: "our websites load fast",},
+  
+    {title: "Readability",
+    description: "you read through them fast",},
+  
+    {title: "Price",
+    description: "prices are very affordable",}
+  
+  ]
 ---
 
 <div class=" "> 
  
     <div class="grid grid-cols-12 gap-10 mr-16 mt-10 text text-2xl"> 
   
-      <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
+      <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-black text-black font-mono font-extrabold"> WR </a>
         
       <a href="" class="col-span-2"></a>
       
-      <a href="/third" class=" hover:text-purple-600 border text-white border-gray-500 ml-20 mr-20 col-span-4 flex justify-center mt-5 ">NEXT DESIGN</a>
+      <a href="/third" class=" hover:text-purple-600 border text-black border-gray-500 ml-20 mr-20 col-span-4 flex justify-center mt-5 ">NEXT DESIGN</a>
   
       <a href="" class="col-span-2"></a>
 
@@ -32,24 +38,49 @@ import product3 from "/src/data/showcase/images/flat.jpg";
     </div>
   </div>
 
-
-	<div class=" grid grid-cols-12">
-			
-
-		<div class="  col-span-6">
-      
-      
-      <div class=" mt-5"> <img src={cityBg} alt="" style=" height: 600px "> </div>
-
-		
-
-	</div>
-
-  <div class=" mt-5 col-span-6"> 
-    <h1 class=" text-white mt-56 border-b-2 flex justify-center ml-8 mr-8 text-7xl">We are <a class="text-gradient ml-2"> WebRepair</a>  </h1>
-		<h1 class="  text-white mt-7 flex justify-center text-3xl">	This site could be yours </h1> 
+  
+  
+  
+  <section class= 'pt-0 md:pt-0 bg-blue-50 dark:bg-slate-800 mt-5 py-16 md:py-20'>
+  
+  
+    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+  
+      <h1 class=" text-blue-800 font-semibold text-lg md:text-2xl flex justify-center pt-10 "> INSIDE  </h1>
+      <h2 class=" font-bold md:text-6xl text-3xl flex justify-center font-serif mt-2"> So what's inside? </h2>
+  
+    </div>
+    
+    
+  
+  <div class=" grid grid-cols-12 ">
+  
+      <div class=" col-span-12 md:col-span-6 mx-auto p-4 mt-16">
+          
+            {
+              items.map(({ title, description }) => (
+                <h1 class=" text-lg md:text-2xl font-semibold flex justify-center md:justify-start pt-10 "> {title}  </h1>
+            <h2 class=" text-lg md:text-2xl flex justify-center md:justify-start pt-1 "> {description}  </h2>
+              ))
+            }          
+  
+      </div>
+  
+  
+  
+      <div class=" hidden md:block col-span-0 md:col-span-6 mx-auto p-4 mt-16 ">
+          
+        <img src="/images/hero.png" alt="">
+  
+      </div>
+  
+  
   </div>
-</div>
+  
+  
+  
+  
+  </section>
 
 
 
@@ -115,7 +146,7 @@ import product3 from "/src/data/showcase/images/flat.jpg";
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #000000;
+		background-color: #ffffff;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
