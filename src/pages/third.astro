@@ -1,5 +1,135 @@
----
-import Design3 from "~/components/design3.astro";
----
 
-<Design3></Design3>
+<html lang="en" class="h-full motion-safe:scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <title>WebRepair</title>
+    
+  </head>  
+ 
+  <body class=""> 
+
+
+<div class=" "> 
+ 
+    <div class="grid grid-cols-12 gap-10 sm:mr-16 pt-10 text sm:text-2xl"> 
+  
+      <a class=" col-span-2 sm:col-span-2 flex justify-center ml-2 sm:ml-36 text-lg sm:text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
+      
+      <a class=" sm:col-span-2"></a>
+      
+      <a href="/four" class=" hover:bg-neutral-50 border border-gray-500 sm:ml-20 mr-20 text-white text-xl col-span-9 md:col-span-4 flex justify-center sm:mt-5 ">NEXT DESIGN</a>
+  
+      <a class="sm:col-span-2"></a>
+  
+      <a class="sm:col-span-2"></a>
+  
+      
+    </div>
+  </div>
+  
+
+
+  
+      <div class=" grid grid-cols-12">
+                  
+                  <div class=" sm:col-span-1">  </div>
+                  <div class=" col-span-12 sm:col-span-6">  
+              <div class=" mt-10 sm:mt-28 font-serif">
+                  <h1 class=" sm:ml-20 ml-5 flex headline text-6xl sm:text-8xl"> <a class=" text-white font-sans ">  WebRepair</a>  </h1>
+                  <h1 class=" sm:ml-20 ml-5 mt-5 flex text-2xl sm:text-5xl mb-0 sm:mb-36 text-white font-sans">	This site could be yours </h1> 
+  
+          
+                  <div class=" sm:mt-40 mt-10 sm:ml-20 ml-5 text-white text-3xl font-sans"> September 09 to 17  </div>
+                  <div class=" mt-5 sm:ml-20 ml-5 text-white text-3xl font-sans"> High Bay, South River Park </div>
+              </div>	  </div>
+                <div class=" mt-9 col-span-5 ">
+                   <div class=" mt-5 sm:mt-96 text-white p-10"> <button class=" px-20 text-xl py-3 border-2 border-white rounded-xl "> Contact </button> </div>
+      
+                  </div>
+      </div>	
+     
+  
+  
+  
+    </body>
+  
+  
+  
+  
+  
+  
+    <style>
+      main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 60ch;
+      }
+      h1 {
+        font-size: 4.2rem;
+        font-weight: 800;
+        margin: 0;
+      }
+      .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+      }
+  
+      .headline {
+  
+        background-size: 400%;
+        background-position: 0%;
+      }
+  
+      .text-gradient2 {
+        background-image: var(--accent-gradient2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+      }
+      .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+      }
+      .instructions code {
+        font-size: 0.875em;
+        font-weight: bold;
+        background: rgba(var(--accent), 12%);
+        color: rgb(var(--accent));
+        border-radius: 4px;
+        padding: 0.3em 0.45em;
+      }
+      .instructions strong {
+        color: rgb(var(--accent));
+      }
+      .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 1rem;
+        padding: 0;
+      }
+      :root {
+          --accent: 124, 58, 237;
+          --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+          --accent-gradient2: linear-gradient(45deg, rgb(var(--accent)), #1503b4 40%, rgb(255, 255, 255) 60%);
+      }
+      html {
+          font-family: system-ui, sans-serif;
+          background-color: #161515;
+      }
+      code {
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+              Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>

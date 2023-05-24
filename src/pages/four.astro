@@ -1,46 +1,52 @@
 ---
-import cityBg from "/src/data/showcase/images/citybg.jpg";
 
 import Title from "/src/data/showcase/images/Title.jpg";
 
 
-import cityBg2 from "/src/data/showcase/images/city2bg.jpg";
-
-import product1 from "/src/data/showcase/images/bedroom.jpg";  
-
-import product2 from "/src/data/showcase/images/kitchen.jpg";
-
-import product3 from "/src/data/showcase/images/flat.jpg";
-
 ---
+<html lang="en" class="h-full motion-safe:scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <title>WebRepair</title>
+    
+  </head>  
+ 
+  <body class=""> 
+
 
 <div class=" "> 
  
-    <div class="grid grid-cols-12 gap-10 mr-16 mt-10 text text-2xl"> 
+    <div class="grid grid-cols-12 gap-10 sm:mr-16 pt-10 text sm:text-2xl"> 
   
-      <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
-        
-      <a href="" class="col-span-2"></a>
+      <a class=" col-span-2 sm:col-span-2 flex justify-center ml-2 sm:ml-36 text-lg sm:text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
       
-      <a href="/five" class=" border hover:text-white border-black mr-40 col-span-4 flex justify-center mt-5 ">NEXT DESIGN</a>
+      <a class=" sm:col-span-2"></a>
+      
+      <a href="/five" class=" hover:bg-neutral-50 border border-gray-500 sm:ml-20 mr-20 text-white text-xl col-span-9 md:col-span-4 flex justify-center sm:mt-5 ">NEXT DESIGN</a>
   
-      <a href="" class="col-span-2"></a>
-
-      <a href="" class="col-span-2"></a>
+      <a class="sm:col-span-2"></a>
+  
+      <a class="sm:col-span-2"></a>
+  
       
     </div>
   </div>
 
+
   <div class=" grid grid-cols-12">
 
-    <div class=" col-span-6">
+    <div class=" col-span-12 sm:col-span-6">
         
-        <div class=" mt-48 font-sans">
-            <h1 class=" text-white h flex justify-center">We are <a class=" h text-white ml-2"> WebRepair</a>  </h1>
-            <h1 class=" text-white  mt-6 flex justify-center text-5xl">	We repair websites </h1> 
-            <h1 class=" text-white  mt-6 flex justify-center text-5xl">	This site could be yours </h1> 
+        <div class=" mt-2 sm:mt-48 font-sans">
+            <h1 class=" text-white sm:text-5xl text-4xl flex justify-center">We are WebRepair  </h1>
+            <h1 class=" text-white mt-6 flex justify-center sm:text-5xl text-3xl">	We repair websites </h1> 
+            <h1 class=" text-white mt-6 flex justify-center sm:text-5xl text-3xl">	This site could be yours </h1> 
             
-            <div class=" text-xl flex justify-center mt-20 text-white"> <button class="bg-gray-800 rounded-sm py-1 px-10"> Buy </button>
+            <div class=" hidden text-xl sm:flex justify-center mt-20 text-white"> <button class="bg-gray-800 rounded-sm py-1 px-10"> Buy </button>
             </div>
 
             
@@ -49,17 +55,18 @@ import product3 from "/src/data/showcase/images/flat.jpg";
     </div>
 
 
-    <div class=" col-span-1"> </div>
+    <div class=" col-span-2 sm:col-span-1"> </div>
 
-    <div class=" col-span-4">
+    <div class=" col-span-8 mt-3 sm:mt-0 sm:col-span-4">
             <div class=" flex justify-center"> <img src={Title} alt=""> </div>
     </div>
 
-    <div class=" col-span-1"> </div>
+    <div class=" col-span-2 sm:col-span-1"> </div>
 
 </div>
-    
-            
+<div class=" sm:hidden text-xl flex justify-center mt-5 text-white"> <button class="bg-gray-800 rounded-sm py-1 px-10"> Buy </button>
+</div>
+</body>            
     
       
 
@@ -75,7 +82,7 @@ import product3 from "/src/data/showcase/images/flat.jpg";
     }
     h1 {
       font-size: 4.2rem;
-      font-weight: 800;
+      font-weight: 700;
       margin: 0;
     }
     .h {

@@ -21,22 +21,22 @@ import firstPage from "/src/data/showcase/images/workpls.jpg"
     
     <div class=" "> 
  
-      <div class="grid grid-cols-12 gap-10 mr-16 pt-10 text text-2xl"> 
+      <div class="grid grid-cols-12 gap-10 sm:mr-16 pt-10 text sm:text-2xl"> 
     
-        <a class=" col-span-2 flex justify-center ml-36 text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
+        <a class=" col-span-2 sm:col-span-2 flex justify-center ml-2 sm:ml-36 text-lg sm:text-5xl border-2 border-white text-white font-mono font-extrabold"> WR </a>
         
-        <a href="" class="col-span-2"></a>
+        <a class=" sm:col-span-2"></a>
         
-        <a href="/second" class=" hover:bg-neutral-50 border border-gray-500 ml-20 mr-20 col-span-4 flex justify-center mt-5 ">NEXT DESIGN</a>
+        <a href="/second" class=" hover:bg-neutral-50 border border-gray-500 sm:ml-20 mr-20 text-xl col-span-9 md:col-span-4 flex justify-center sm:mt-5 ">NEXT DESIGN</a>
     
-        <a href="" class="col-span-2"></a>
+        <a class="sm:col-span-2"></a>
 
-        <a href="" class="col-span-2"></a>
+        <a class="sm:col-span-2"></a>
     
-       
         
       </div>
     </div>
+    
       
     
     <html> 
@@ -44,20 +44,25 @@ import firstPage from "/src/data/showcase/images/workpls.jpg"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Oswald:wght@300;400&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
       
-      <div class=" grid grid-cols-12">
+
+    <div class=" sm:hidden block ml-5 sm:ml-0 col-span-4 sm:col-span-6">
+      <div class=" mr-10"> <img src={firstPage} alt="photo"> </div>
+    </div>
+
+      <div class=" grid grid-cols-4 sm:grid-cols-12">
     
-        <div class="  col-span-6">
+        <div class=" col-span-4 sm:col-span-6">
           
-          <div class=" ml-24 mt-36 font-sans">
-            <div class=" font text-black text-4xl flex justify-start"> Real Estate CO. <a class="text-gradient ml-2"> </a>  </div>
-            <h1 class=" font mt-14 flex justify-start text-6xl">	
+          <div class=" ml-5 sm:ml-24 mt-3 sm:mt-36 font-sans">
+            <div class=" font text-black text-xl sm:text-4xl flex justify-start"> Real Estate CO. <a class="text-gradient ml-2"> </a>  </div>
+            <h1 class=" font mt-4 sm:mt-14 flex justify-start text-3xl sm:text-6xl">	
               EXPERTISE. </h1> 
             
-            <h1 class=" font mt-10 flex justify-start text-6xl "> 
+            <h1 class=" font mt-4 sm:mt-10 flex justify-start  text-3xl sm:text-6xl "> 
                 COMMITMENT.
             </h1>
     
-            <h1 class=" font mt-10 flex justify-start text-6xl "> 
+            <h1 class=" font mt-4 sm:mt-10 flex justify-start  text-3xl sm:text-6xl "> 
               VALUE.
             </h1>
             
@@ -65,7 +70,7 @@ import firstPage from "/src/data/showcase/images/workpls.jpg"
           </div>
         </div>
     
-        <div class=" pb-10 col-span-6">
+        <div class=" hidden sm:block pb-10 ml-5 sm:ml-0 col-span-4 sm:col-span-6">
             <div class=" mr-10 mt-20"> <img src={firstPage} alt="photo"> </div>
         </div>
     
